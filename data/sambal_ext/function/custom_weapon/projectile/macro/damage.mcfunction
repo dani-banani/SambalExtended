@@ -1,0 +1,2 @@
+execute as @a if score @s dani.player.marker.id = marker.id.now dani.player.marker.id run tag @s add player_hitting
+$damage @s $(amount) $(damage_type) by @e[type=marker,tag=sambal.projectile_now,limit=1] from @p[tag=player_hitting]

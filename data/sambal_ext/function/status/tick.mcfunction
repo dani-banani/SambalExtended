@@ -1,3 +1,5 @@
+scoreboard players set @s sambal_ext.status.damage_taken_increase.percentage 100
+
 execute if score @s sambal_ext.status.lifetime matches 0 run scoreboard players reset @s sambal_ext.status.type
 scoreboard players operation status_now sambal_ext.status.type = @s sambal_ext.status.type
 scoreboard players operation time_now sambal_ext.status.lifetime = @s sambal_ext.status.lifetime 
@@ -9,3 +11,6 @@ scoreboard players remove @s sambal_ext.status.lifetime 1
 
 # Only one status can be applied at a time
 # Status are more hardcore effects that can stun or lock a player
+# And also add vulnerability to the player so basically damage boost
+# damage boost would be like this: 100 = damage multiplier is 100% meaning it will be the same
+# so double damage is 200

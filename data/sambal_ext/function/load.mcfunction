@@ -4,6 +4,9 @@ scoreboard objectives add sambal_ext.player.action.drop_item minecraft.custom:mi
 scoreboard objectives add sambal_ext.custom_weapon.swap_cooldown dummy
 scoreboard objectives add sambal_ext.custom_weapon.drop_cooldown dummy
 scoreboard objectives add sambal_ext.custom_weapon.projectile.lifetime dummy
+scoreboard objectives add sambal_ext.custom_weapon.projectile.now_data dummy
+
 ## Statuses
 scoreboard objectives add sambal_ext.status.lifetime dummy
 scoreboard objectives add sambal_ext.status.type dummy
+scoreboard objectives add sambal_ext.status.damage_taken_increase.percentage dummy
