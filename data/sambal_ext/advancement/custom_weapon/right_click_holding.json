@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "holding_right_click": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "#minecraft:swords",
+          "predicates": {
+            "minecraft:custom_data": "{sambal:custom_weapon}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sambal_ext:custom_weapon/right_click_holding"
+  }
+}

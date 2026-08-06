@@ -1,0 +1,1 @@
+execute if entity @s[tag=sambal_ext.custom_weapon.projectile] run function sambal_ext:custom_weapon/projectile/main

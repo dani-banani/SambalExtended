@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "Swap Item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "minecraft:slots": {
+            "weapon.offhand": {
+              "predicates": {
+                "minecraft:custom_data": "{sambal:custom_weapon}"
+              }
+            },
+            "weapon.mainhand": {
+              "items": "minecraft:air"
+            }
+          }
+        },
+        "slots": {},
+        "items": [
+          {
+            "predicates": {
+              "minecraft:custom_data": "{sambal:custom_weapon}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "sambal_ext:custom_weapon/swap_offhand"
+  }
+}

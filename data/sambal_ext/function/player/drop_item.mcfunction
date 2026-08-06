@@ -1,0 +1,1 @@
+execute if predicate sambal_ext:custom_weapon/item_check run function sambal_ext:custom_weapon/drop_item_return

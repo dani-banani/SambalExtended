@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "Right Click": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "#minecraft:swords",
+          "components": {},
+          "predicates": {
+            "minecraft:custom_data": "{sambal:custom_weapon}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sambal_ext:custom_weapon/right_click"
+  }
+}
