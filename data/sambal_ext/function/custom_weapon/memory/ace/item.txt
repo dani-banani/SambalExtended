@@ -5,11 +5,16 @@ give @s wooden_sword[
         sambal_ext.weapon_data:{
             id:"ace",
             type:"memory",
+            mainhand:{
+                id:"ace",
+                type:"memory",
+                variation:1
+            },
             left_click:{
                 id:"ace",
                 type:"memory",
                 variation:1,
-                projectile_lifetime:20,
+                projectile_lifetime:4,
                 projectile_main:{
                     method:"left_click",
                     id:"ace",
@@ -18,7 +23,7 @@ give @s wooden_sword[
                 },
                 projectile_onhit:{
                     damage:{
-                        amount:1,
+                        amount:5,
                         damage_type:"minecraft:player_attack",
                     },
                     method:"left_click",
@@ -96,7 +101,7 @@ give @s wooden_sword[
         }
     },
     consumable={
-        consume_seconds:1,
+        consume_seconds:4,
         animation:"none",
         sound:"intentionally_empty",
         has_consume_particles:false,
@@ -107,14 +112,14 @@ give @s wooden_sword[
             }
         ]
     },
-    item_model="minecraft:netherite_sword",
+    item_model="minecraft:sambal/custom_weapon/ace/sword",
     use_cooldown={
-        seconds:1.5,
-        cooldown_group:"custom_sword"
+        seconds:8.2,
+        cooldown_group:"sambal.custom_weapon.ace"
     },
     use_effects={
-        speed_multiplier:1,
-        can_sprint:true,
+        speed_multiplier:0.15,
+        can_sprint:false,
         interact_vibrations:true
     },
     unbreakable={},
@@ -127,17 +132,9 @@ give @s wooden_sword[
         ]
     },
     enchantment_glint_override=false,
-    custom_name={
-        "bold":false,
-        "color":"white",
-        "italic":false,
-        "obfuscated":false,
-        "strikethrough":false,
-        "text":"ace Weapon",
-        "underlined":false
-    },
+    custom_name=[{"bold":true,"color":"dark_purple","text":" - "},{"bold":false,"color":"#D6223A","italic":false,"obfuscated":false,"strikethrough":false,"text":"Ace","underlined":false},{"color":"dark_purple","text":" -"}],
     swing_animation={
-        duration:5,
+        duration:6,
         type:"whack"
     },
     minimum_attack_charge=1,
@@ -145,7 +142,7 @@ give @s wooden_sword[
         {
             id:"attack_speed",
             type:"attack_speed",
-            amount:-.5,
+            amount:-.45,
             operation:"add_multiplied_base",
             slot:"mainhand",
             display:{

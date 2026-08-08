@@ -1,11 +1,15 @@
 scoreboard players set @s sambal_ext.status.damage_taken_increase.percentage 100
 
 execute if score @s sambal_ext.status.lifetime matches 0 run scoreboard players reset @s sambal_ext.status.type
+execute if score @s sambal_ext.status.lifetime matches 0 run scoreboard players reset @s sambal_ext.status.level
 scoreboard players operation status_now sambal_ext.status.type = @s sambal_ext.status.type
-scoreboard players operation time_now sambal_ext.status.lifetime = @s sambal_ext.status.lifetime 
-# status_now and time_now defined
+scoreboard players operation time_now sambal_ext.status.lifetime = @s sambal_ext.status.lifetime
+scoreboard players operation level_now sambal_ext.status.lifetime = @s sambal_ext.status.level 
+
+# status_now and time_now and level_now are defined
 ## Status score -> status main page
 execute if score status_now sambal_ext.status.type matches 1 run function sambal_ext:status/stunned/tick
+execute if score status_now sambal_ext.status.type matches 2 run function sambal_ext:status/conquerer/tick
 
 scoreboard players remove @s sambal_ext.status.lifetime 1
 

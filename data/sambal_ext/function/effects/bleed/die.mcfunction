@@ -1,0 +1,1 @@
+scoreboard players reset @s sambal_ext.effect.bleed.level

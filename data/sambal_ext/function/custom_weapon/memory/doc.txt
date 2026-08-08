@@ -6,6 +6,11 @@ give @s wooden_sword[
         sambal_ext.weapon_data:{
             id:"template",
             type:"memory",
+            mainhand:{
+                id:"template",
+                type:"memory",
+                variation:1
+            },
             left_click:{
                 id:"template",
                 type:"memory",

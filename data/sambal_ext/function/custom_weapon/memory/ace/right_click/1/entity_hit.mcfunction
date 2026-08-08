@@ -1,0 +1,1 @@
+function sambal_ext:status/conquerer/apply {duration:75,level:3}

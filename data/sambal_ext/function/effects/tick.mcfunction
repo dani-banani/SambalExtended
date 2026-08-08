@@ -1,0 +1,1 @@
+execute if score @s sambal_ext.effect.bleed.level matches 1.. run function sambal_ext:effects/bleed/tick
