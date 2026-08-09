@@ -1,0 +1,1 @@
+$function sambal_ext:custom_weapon/$(type)/$(id)/animations/$(animation_type)/play

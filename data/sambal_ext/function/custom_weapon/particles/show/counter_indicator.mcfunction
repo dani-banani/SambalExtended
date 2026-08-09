@@ -1,0 +1,1 @@
+execute anchored eyes rotated ~ -90 run function sambal_ext:custom_weapon/particles/dir/counter_indicator
