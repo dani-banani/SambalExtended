@@ -1,5 +1,10 @@
+
+## Sambal
+scoreboard objectives add sambal.temp dummy
+
 ## player
 scoreboard objectives add sambal_ext.player.action.drop_item minecraft.custom:minecraft.drop
+
 ## Custom weapon
 scoreboard objectives add sambal_ext.custom_weapon.swap_cooldown dummy
 scoreboard objectives add sambal_ext.custom_weapon.drop_cooldown dummy
@@ -8,6 +13,7 @@ scoreboard objectives add sambal_ext.custom_weapon.projectile.now_data dummy
 scoreboard objectives add sambal_ext.custom_weapon.animation_time dummy
 scoreboard objectives add sambal_ext.custom_weapon.animation_mapping dummy
 scoreboard objectives add sambal_ext.custom_weapon.animation_type dummy
+scoreboard objectives add sambal_ext.custom_weapon.animation.no_moves_usable dummy
 
 ## Ace
 scoreboard objectives add sambal_ext.custom_weapon.ace.click_combo dummy

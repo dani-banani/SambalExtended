@@ -1,0 +1,1 @@
+$data modify storage sambal:temp return_val set value "$(sec).$(milisec)"
