@@ -1,0 +1,2 @@
+execute if score @s sambal_ext.custom_weapon.animation_time matches 10 run effect give @s blindness 1 1 true
+execute if score @s sambal_ext.custom_weapon.animation_time matches 1 run function sambal_ext:custom_weapon/memory/ace/drop_item/1/shoot_kamusari

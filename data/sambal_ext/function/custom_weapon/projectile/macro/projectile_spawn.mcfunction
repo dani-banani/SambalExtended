@@ -4,6 +4,7 @@ $scoreboard players set @s sambal_ext.custom_weapon.projectile.lifetime $(projec
 $data modify entity @s data.sambal.custom_projectile.projectile_main set value $(projectile_main)
 $data modify entity @s data.sambal.custom_projectile.projectile_onhit set value $(projectile_onhit)
 tp @s ~ ~ ~ ~ ~
+execute if data storage sambal:temp command run function sambal_ext:custom_weapon/projectile/macro/init_command with storage sambal:temp
 # $say $(type) $(id) $(projectile_lifetime)
 
 #STORAGE : sambal custom_weapon.projectile_spawn.drop_item

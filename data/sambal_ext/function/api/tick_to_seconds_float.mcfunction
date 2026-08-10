@@ -9,4 +9,4 @@ scoreboard players operation $total sambal.temp = $seconds sambal.temp
 scoreboard players operation $total sambal.temp *= $const.100 dani.Global
 scoreboard players operation $total sambal.temp += $miliseconds sambal.temp
 execute store result storage sambal:temp return_val float 0.01 run scoreboard players get $total sambal.temp
-
+scoreboard players reset $tick sambal.temp

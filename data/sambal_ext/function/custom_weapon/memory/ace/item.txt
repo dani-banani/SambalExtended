@@ -59,6 +59,7 @@ give @s wooden_sword[
                 type:"memory",
                 variation:1,
                 projectile_lifetime:20,
+                cooldown:400,
                 projectile_main:{
                     method:"swap_item",
                     id:"ace",
@@ -80,7 +81,8 @@ give @s wooden_sword[
                 id:"ace",
                 type:"memory",
                 variation:1,
-                projectile_lifetime:20,
+                projectile_lifetime:30,
+                cooldown:500s,
                 projectile_main:{
                     method:"drop_item",
                     id:"ace",
@@ -89,7 +91,7 @@ give @s wooden_sword[
                 },
                 projectile_onhit:{
                     damage:{
-                        amount:1,
+                        amount:15,
                         damage_type:"minecraft:player_attack",
                     },
                     method:"drop_item",
@@ -102,7 +104,7 @@ give @s wooden_sword[
     },
     consumable={
         consume_seconds:4,
-        animation:"none",
+        animation:"trident",
         sound:"intentionally_empty",
         has_consume_particles:false,
         on_consume_effects:[
@@ -114,7 +116,7 @@ give @s wooden_sword[
     },
     item_model="minecraft:sambal/custom_weapon/ace/sword",
     use_cooldown={
-        seconds:8.2,
+        seconds:10,
         cooldown_group:"sambal.custom_weapon.ace"
     },
     use_effects={

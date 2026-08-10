@@ -1,5 +1,6 @@
 {
     "values": [
+        "#taglib:overworld_plants",
         "#c:glass_blocks",
         "#c:glass_panes",
         "#minecraft:leaves",

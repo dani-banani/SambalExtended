@@ -3,3 +3,4 @@ execute if predicate dani:percentage/15 run particle instant_effect{color:[1.000
 execute if predicate dani:percentage/1 run particle minecraft:end_rod ~ ~ ~ 0.2 0.2 0.2 0 2 force @a
 particle dust_color_transition{from_color:[0.000,0.000,0.000],to_color:[0.871,0.271,0.710],scale:0.4} ~ ~ ~ 0 0 0 0 0 normal
 execute if predicate dani:percentage/50 if predicate dani:percentage/1 run particle cherry_leaves
+execute if block ~ ~ ~ #sambal_ext:breakable run setblock ~ ~ ~ air destroy
