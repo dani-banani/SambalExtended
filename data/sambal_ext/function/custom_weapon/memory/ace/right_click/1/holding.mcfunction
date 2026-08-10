@@ -29,7 +29,6 @@ execute if score @s sambal_ext.custom_weapon.ace.conq_hold matches 52 run playso
 execute if score @s sambal_ext.custom_weapon.ace.conq_hold matches 60 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.15 1.8
 execute if score @s sambal_ext.custom_weapon.ace.conq_hold matches 68 run playsound minecraft:ui.button.click master @a ~ ~ ~ 0.15 1.9
 execute if score @s sambal_ext.custom_weapon.ace.conq_hold matches 4.. run effect give @s minecraft:resistance 1 1 true
-execute if score @s sambal_ext.custom_weapon.ace.conq_hold matches 4.. if entity @s[tag=sambal.custom_weapon.entity_hit_player] run say ow
 
 
 execute if score @s sambal_ext.custom_weapon.ace.conq_hold matches 80.. run title @s actionbar ["",{text:">",bold:true,color:"dark_red"},{text:"-",color:"dark_purple",bold:true},{text:"-",color:"dark_purple",bold:true},{text:"-",color:"dark_purple",bold:true},{text:"-",color:"dark_purple",bold:true},{text:"-",color:"dark_purple",bold:true},{text:"I",bold:true,color:"dark_red"},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"II",bold:true,color:"dark_red"},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"=",color:"dark_purple",bold:true},{text:"III",bold:true,color:"dark_red"}]

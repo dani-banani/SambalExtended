@@ -1,0 +1,17 @@
+{
+  "type": "sambal_ext:dungeon",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "sambal_ext:dungeon",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:light_gray_concrete"
+        }
+      ]
+    }
+  }
+}
